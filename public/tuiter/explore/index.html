@@ -3,85 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="index.css"
-          rel="stylesheet"/>
-    <link href="../styles.css"
-          rel="stylesheet"/>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="index.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome6/css/all.css" rel="stylesheet"/>
+    <script src= "../../vendors/bootstrap/js/bootstrap.min.js"> </script>
 </head>
 <body>
-<div>
-    <p class="wd-frame">
-        <input class="wd-input-search" type="text" placeholder="Search Tuiter"/>
-        <a class="wd-gear-icon" href="explore-settings.html">&#x2699;</a>
-        <br/>
-        <a class="wd-tab-selected" href="#">For you</a>
-        <a class="wd-regular-tab" href="#">Trending</a>
-        <a class="wd-regular-tab" href="#">COVID-19</a>
-        <a class="wd-regular-tab" href="#">News</a>
-        <a class="wd-regular-tab" href="#">Sports</a>
-        <a class="wd-regular-tab" href="#">Entertainment</a>
-    </p>
-
-    <p class="wd-divider"></p>
-
-    <p class="wd-trending-content-frame">
-        <span class="wd-trending-topic">Trending in Science</span>
-        <span class="wd-three-dot">...</span>
-        <br/>
-        <span class="wd-trending-title">Starship</span><br/>
-        <span class="wd-tuits-number">55.5K Tuits</span><br/>
-    </p>
-
-    <div class="wd-specific-content-frame">
-        <div class="wd-specific-content-frame-left">
-            <span class="wd-author">The New York Times</span>
-            <span class="wd-topic-time-posted"> · Yesterday</span><br/>
-            <p class="wd-specific-title">CNN's Cuomo conundrum: A star anchor with a brother in trouble</p>
-        </div>
-        <div class="wd-specific-content-frame-right">
-            <img src="nytimes.png" class="wd-specific-content-pic"/>
-        </div>
-    </div>
-
-    <div class="wd-specific-content-frame">
-        <div class="wd-specific-content-frame-left">
-            <span class="wd-specific-topic">COVID-19 · LIVE</span><br/>
-            <p class="wd-specific-title">COVID-19: News and updates for Massachusetts</p>
-        </div>
-        <div class="wd-specific-content-frame-right">
-            <img src="covid.png" class="wd-specific-content-pic"/>
-        </div>
-    </div>
-
-    <p class="wd-trending-content-frame">
-        <span class="wd-trending-topic">Sports · Trending</span>
-        <span class="wd-three-dot">...</span>
-        <br/>
-        <span class="wd-trending-title">Joe Rogan</span><br/>
-        <span class="wd-tuits-number">3,218 Tuits</span><br/>
-    </p>
-
-    <div class="wd-specific-content-frame">
-        <div class="wd-specific-content-frame-left">
-            <span class="wd-author">Bloomberg Opinion</span>
-            <span class="wd-topic-time-posted"> · Yesterday</span><br/>
-            <p class="wd-specific-title">Thinking about getting a booster? Read this first.</p>
-        </div>
-        <div class="wd-specific-content-frame-right">
-            <img src="vaccine.jpeg" class="wd-specific-content-pic"/>
+<div class="row ">
+    <div class="col-1 col-xl-1 mt-2"></div>
+    <div class="col-2 col-lg-1 col-xl-2 mt-2">
+        <div class="list-group">
+            <a class="list-group-item wd-override-list" href="#">
+                <i class="fa-solid fa-t fa-inverse"></i>
+            </a>
+            <a class="py-3 list-group-item wd-override-list" href="#">
+                <i class="fa-solid fa-house-chimney-window fa-inverse wd-left-text-unselected-icon"></i>
+                <span class="d-none d-xl-inline wd-left-text-unselected-text" >&nbsp;Home</span>
+            </a>
+            <a class="py-3 list-group-item wd-override-list" href="#">
+                <i class="fa-solid fa-hashtag fa-inverse"></i>
+                <span class="d-none d-xl-inline wd-left-text-selected-text">&nbsp;&nbsp;Explore</span>
+            </a>
+            <a class="py-3 list-group-item wd-override-list" href="#">
+                <i class="fa-solid fa-bell fa-inverse wd-left-text-unselected-icon"></i>
+                <span class="d-none d-xl-inline wd-left-text-unselected-text">&nbsp;&nbsp;Notifications</span>
+            </a>
+            <a class="py-3 list-group-item wd-override-list" href="#">
+                <i class="fa-solid fa-envelope fa-inverse wd-left-text-unselected-icon"></i>
+                <span class="d-none d-xl-inline wd-left-text-unselected-text">&nbsp;&nbsp;Messages</span>
+            </a>
+            <a class="py-3 list-group-item wd-override-list" href="#">
+                <i class="fa-solid fa-bookmark fa-inverse wd-left-text-unselected-icon"></i>
+                <span class="d-none d-xl-inline wd-left-text-unselected-text">&nbsp;&nbsp;&nbsp;Bookmarks</span>
+            </a>
+            <a class="py-3 list-group-item wd-override-list" href="#">
+                <i class="fa-solid fa-list-ul fa-inverse wd-left-text-unselected-icon"></i>
+                <span class="d-none d-xl-inline wd-left-text-unselected-text">&nbsp;&nbsp;Lists</span>
+            </a>
+            <a class="py-3 list-group-item wd-override-list" href="#">
+                <i class="fa-solid fa-user fa-inverse wd-left-text-unselected-icon"></i>
+                <span class="d-none d-xl-inline wd-left-text-unselected-text">&nbsp;&nbsp;Profile</span>
+            </a>
+            <a class="py-3 list-group-item wd-override-list" href="#">
+                <i class="fa-solid fa-ellipsis fa-inverse wd-left-text-unselected-icon"></i>
+                <span class="d-none d-xl-inline wd-left-text-unselected-text">&nbsp;&nbsp;More</span>
+            </a>
+            <button class="py-3 btn btn-primary wd-override-button-tuit mt-2">Tuit</button>
         </div>
     </div>
-
-    <div class="wd-specific-content-frame">
-        <div class="wd-specific-content-frame-left">
-            <span class="wd-specific-topic">Florida Hurricane · LIVE</span><br/>
-            <p class="wd-specific-title">Hurricane Ian’s destruction — by the numbers</p>
+    <div class="col-8 col-lg-6 col-xl-5">
+        <div class="mt-0 mb-0 ms-0 me-0 pt-2 pb-0 ps-0 pe-0 border border-2 border-top-0">
+        <div class="row ms-1 me-2">
+            <div class="col-9">
+                <div class="input-group">
+                <span class="input-group-text wd-override-mirror">
+                    <i class="fa fa-search fa-1x fa-inverse wd-override-search-icon"></i>
+                </span>
+                <input type="text" class="form-control wd-override-input" placeholder="Search Tuiter"/>
+            </div>
+            </div>
+            <div class="col-3 wd-middle-frame">
+                <i class="fas fa-cog fa-2x fa-inverse wd-override-cog-icon"></i>
+            </div>
         </div>
-        <div class="wd-specific-content-frame-right">
-            <img src="florida.jpeg" class="wd-specific-content-pic"/>
+
+        <ul class="nav nav-tabs mt-2 border-bottom-0">
+            <li class="nav-item">
+                <a class="nav-link active" href="for-you.html">
+                    <div class="wd-selected-tab">For you </div>
+                    </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="trending.html">Trending</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sports.html">Sports</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link d-none d-md-block" href="entertainment.html">Entertainment</a>
+            </li>
+        </ul>
+
+        <div class="card text-white mt-0 wd-card-image wd-override-card">
+            <img src="starship.jpeg">
+            <div class="card-img-overlay">
+                <p class="card-title wd-card-overlay ms-2 mb-0">SpaceX's Starship</p>
+            </div>
+        </div>
+
+        <ul class="list-group">
+            <li class="list-group-item wd-override-list">
+                <div class="row">
+                    <div class="col-8">
+                        <p class="wd-subtext mb-0">Web development</p>
+                        <div>
+                            <span class="wd-text wd-left-text">ReactJS</span>
+                            <i class="fas fa-check-circle fa-0.5x fa-inverse"></i>
+                            <span class="wd-subtext">- 2h</span>
+                        </div>
+                        <p class="wd-text wd-left-text">React.js is a component based front end library that makes is very easy to build Single Page Applications or SPAs</p>
+                    </div>
+                    <div class="col-4 wd-middle-frame">
+                        <img src="react.png" class="wd-middle-image">
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item wd-override-list">
+                <div class="row">
+                    <div class="col-8">
+                        <div>
+                            <span class="wd-text wd-left-text">JavaScript</span>
+                            <i class="fas fa-check-circle fa-0.5x fa-inverse"></i>
+                            <span class="wd-subtext">- 2h</span>
+                        </div>
+                        <p class="wd-text mb-0 wd-left-text">JavaScript is programming language that can run on browsers as well as desktops</p>
+                        <p class="wd-subtext mt-0">123K Tweets</p>
+                    </div>
+                    <div class="col-4 wd-middle-frame">
+                        <img src="javascript.png" class="wd-middle-image">
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item wd-override-list">
+                <div class="row">
+                    <div class="col-8">
+                        <p class="wd-subtext mb-0">Web development</p>
+                        <p class="wd-text mb-0 wd-left-text">jQuery</p>
+                        <p class="wd-subtext mt-0">123K Tweets</p>
+                    </div>
+                    <div class="col-4 wd-middle-frame">
+                        <img src="jquery.png" class="wd-middle-image">
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item wd-override-list">
+                <div class="row">
+                    <div class="col-8">
+                        <p class="wd-subtext mb-0">Web development</p>
+                        <div>
+                            <span class="wd-text wd-left-text">NodeJS</span>
+                            <i class="fas fa-check-circle fa-0.5x fa-inverse"></i>
+                            <span class="wd-subtext">- 2h</span>
+                        </div>
+                        <p class="wd-subtext">123K Tweets</p>
+                    </div>
+                    <div class="col-4 wd-middle-frame">
+                        <img src="nodejs.png" class="wd-middle-image">
+                    </div>
+                </div>
+            </li>
+        </ul>
         </div>
     </div>
-
+    <div class="d-none d-lg-block col-lg-3 col-xl-3 mt-2">
+        <ul class="list-group border">
+            <li class="list-group-item wd-override-list wd-right-text">Who to follow</li>
+            <li class="list-group-item wd-override-list">
+                <div class="row">
+                    <div class="col-3 col-xl-3 col-xxl-2 d-flex flex-wrap align-items-center">
+                        <img src="java.png" class="wd-image">
+                    </div>
+                    <div class="col-5 col-xl-6 col-xxl-7 pe-0">
+                        <div>
+                            <span class="wd-text wd-right-text">Java</span>
+                            <i class="fas fa-check-circle fa-0.5x fa-inverse"></i>
+                        </div>
+                        <p class="wd-right-text-handle">@Java</p>
+                    </div>
+                    <div class="col-4 col-xl-3 col-xxl-3 ps-0 d-flex flex-wrap align-items-center">
+                        <button class="btn btn-primary wd-override-button">Follow</button>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item wd-override-list">
+            <div class="row">
+                <div class="col-3 col-xl-3 col-xxl-2 d-flex flex-wrap align-items-center" >
+                    <img src="relativity.jpeg" class="wd-image">
+                </div>
+                <div class="col-5 col-xl-6 col-xxl-7 pe-0">
+                    <div>
+                        <span class="wd-text wd-right-text">Relativity Space</span>
+                        <i class="fas fa-check-circle fa-0.5x fa-inverse"></i>
+                    </div>
+                    <p class="wd-right-text-handle">@relativityspace</p>
+                </div>
+                <div class="col-4 col-xl-3 col-xxl-3 ps-0 d-flex flex-wrap align-items-center">
+                    <button class="btn btn-primary wd-override-button">Follow</button>
+                </div>
+            </div>
+            </li>
+            <li class="list-group-item wd-override-list">
+                <div class="row">
+                    <div class="col-3 col-xl-3 col-xxl-2 d-flex flex-wrap align-items-center" >
+                        <img src="virgin.png" class="wd-image">
+                    </div>
+                    <div class="col-5 col-xl-6 col-xxl-7 pe-0">
+                        <div>
+                            <span class="wd-text wd-right-text">Virgin Galactic</span>
+                            <i class="fas fa-check-circle fa-0.5x fa-inverse"></i>
+                        </div>
+                        <p class="wd-right-text-handle">@virgingalactic</p>
+                    </div>
+                    <div class="col-4 col-xl-3 col-xxl-3 ps-0 d-flex flex-wrap align-items-center">
+                        <button class="btn btn-primary wd-override-button">Follow</button>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item wd-override-list">
+                <div class="row">
+                    <div class="col-3 col-xl-3 col-xxl-2 d-flex flex-wrap align-items-center" >
+                        <img src="nasa.jpeg" class="wd-image">
+                    </div>
+                    <div class="col-5 col-xl-6 col-xxl-7 pe-0">
+                        <div>
+                            <span class="wd-text wd-right-text">NASA</span>
+                            <i class="fas fa-check-circle fa-0.5x fa-inverse"></i>
+                        </div>
+                        <p class="wd-right-text-handle">@NASA</p>
+                    </div>
+                    <div class="col-4 col-xl-3 col-xxl-3 ps-0 d-flex flex-wrap align-items-center">
+                        <button class="btn btn-primary wd-override-button">Follow</button>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item wd-override-list">
+                <div class="row">
+                    <div class="col-3 col-xl-3 col-xxl-2 d-flex flex-wrap align-items-center" >
+                        <img src="tesla.png" class="wd-image">
+                    </div>
+                    <div class="col-5 col-xl-6 col-xxl-7 pe-0">
+                        <div>
+                            <span class="wd-text wd-right-text">Tesla</span>
+                            <i class="fas fa-check-circle fa-0.5x fa-inverse"></i>
+                        </div>
+                        <p class="wd-right-text-handle">@Tesla</p>
+                    </div>
+                    <div class="col-4 col-xl-3 col-xxl-3 ps-0 d-flex flex-wrap align-items-center">
+                        <button class="btn btn-primary wd-override-button">Follow</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="col-1 col-xl-1 mt-2 "></div>
 </div>
 
 </body>
