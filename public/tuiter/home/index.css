@@ -1,0 +1,56 @@
+.wd-avatar-image {
+    border-radius: 35px;
+    width: 50px;
+    height: 50px;
+}
+
+.wd-override-text-bold {
+    font-weight: bold;
+}
+
+.wd-post-summary-image {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.card.wd-override-card {
+    border-radius: 20px;
+    border-color: rgb(102,107,111);
+    background-color: black;
+    color: white;
+}
+
+.wd-override-icon-color-gray {
+    --fa-inverse: rgb(102,107,111);
+    color: rgb(102,107,111);
+}
+
+.wd-override-text-color-gray {
+    color: rgb(102,107,111);
+}
+
+.wd-post-summary-frame {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.wd-override-text-color-white {
+    color: white;
+}
+
+.wd-post-image-radius {
+    border-radius: 20px;
+}
+
+.list-group.border {
+    border: none !important;
+    border-radius: 20px;
+}
+
+.wd-override-text-below-card {
+    border-style: none;
+    border-top: 1px red;
+
+}
