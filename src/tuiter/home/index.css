@@ -1,0 +1,30 @@
+.wd-override-text-bold {
+    font-weight: bold;
+}
+
+.wd-override-text-color-white {
+    color: black;
+}
+
+.wd-override-text-color-gray {
+    color: rgb(102,107,111);
+}
+
+.card.wd-override-card {
+    border-color: rgb(102,107,111);
+    background-color: black;
+    color: white;
+}
+
+.wd-post-image-radius {
+    border-radius: 20px;
+}
+
+.wd-override-icon-color-gray {
+    --fa-inverse: rgb(102,107,111);
+    color: rgb(102,107,111);
+}
+
+.wd-override-icon-color-blue {
+    color: rgb(30,155,240);
+}
