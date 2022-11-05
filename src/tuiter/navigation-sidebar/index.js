@@ -1,45 +1,55 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import {useLocation} from "react-router";
+import {
+    HouseDoorFill,
+    Hash,
+    Asterisk,
+    Bell,
+    Envelope,
+    Bookmark,
+    CardList,
+    Person,
+    ThreeDots
+} from 'react-bootstrap-icons';
 const NavigationSidebar = () => {
     const {pathname} = useLocation();
     const paths = pathname.split('/')
     const active = paths[2];
     return (
         <div className="list-group">
-            <a className="list-group-item">Tuiter</a>
-            <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
-                Home
+            <Link to="/tuiter" className="list-group-item">Tuiter</Link>
+            <Link to="/tuiter/home" className={`list-group-item ${active === 'home' || !active ?'active':''}`}>
+                <HouseDoorFill className="pe-2 pb-1" size={25}/>Home
             </Link>
             <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore'?'active':''}`}>
-                Explore
+                <Hash className="pe-2 pb-1" size={25}/>Explore
             </Link>
             <Link to="/" className="list-group-item">
-                Labs
+                <Asterisk className="pe-2 pb-1" size={25}/>Labs
             </Link>
             <a className={`list-group-item
                     ${active === 'notifications'?'active':''}`}>
-                Notifications
+                <Bell className="pe-2 pb-1" size={25}/>Notifications
             </a>
             <a className={`list-group-item
                     ${active === 'messages'?'active':''}`}>
-                Messages
+                <Envelope className="pe-2 pb-1" size={25}/>Messages
             </a>
             <a className={`list-group-item
                     ${active === 'bookmarks'?'active':''}`}>
-                Bookmarks
+                <Bookmark className="pe-2 pb-1" size={25}/>Bookmarks
             </a>
             <a className={`list-group-item
                     ${active === 'lists'?'active':''}`}>
-                Lists
+                <CardList className="pe-2 pb-1" size={25}/>Lists
             </a>
-            <a className={`list-group-item
-                    ${active === 'profile'?'active':''}`}>
-                Profile
-            </a>
+            <Link to="/tuiter/profile" className={`list-group-item ${(active === 'profile' || active ==='edit-profile') ?'active':''}`}>
+                <Person className="pe-2 pb-1" size={25}/> Profile
+            </Link>
             <a className={`list-group-item
                     ${active === 'more'?'active':''}`}>
-                More
+                <ThreeDots className="pe-2 pb-1" size={25}/>More
             </a>
         </div>
     );

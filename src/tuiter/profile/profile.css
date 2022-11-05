@@ -1,0 +1,40 @@
+.wd-profile-name-top {
+    font-weight: bold;
+    font-size: large;
+    margin-top: -10px;
+}
+
+.wd-profile-tuitNum {
+    margin-top: -20px;
+}
+
+.wd-profile-bannerPicture {
+    width: 100%;
+    height: 20%;
+}
+
+.wd-profile-avatarPicture {
+    width: 25%;
+    height: 25%;
+    margin-top: -80px;
+    margin-left: 15px;
+}
+
+.wd-edit-profile-button {
+    margin-top: 10px;
+    color: black !important;
+    font-weight: bold !important;
+    border: 0.5px solid gray !important;
+    background-color: white !important;
+}
+
+.wd-profile-name-mid {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.wd-profile-follow-num {
+    color: black;
+    font-weight: bold;
+}

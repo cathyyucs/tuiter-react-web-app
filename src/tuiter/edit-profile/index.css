@@ -1,0 +1,24 @@
+.wd-edit-profile-title {
+    font-weight: bold;
+}
+
+.wd-edit-profile-save-button {
+    color: white !important;
+    font-weight: bold !important;
+    background-color: black !important;
+}
+
+.wd-edit-profile-input {
+    width: 100%;
+    border-style: none;
+}
+
+.wd-edit-profile-x-button {
+    color: black;
+}
+
+.wd-edit-profile-input-box {
+    border: 0.5px solid gray;
+    padding-left: 5px;
+    border-radius: 2px;
+}

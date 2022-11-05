@@ -1,12 +1,16 @@
 import React from "react";
-import PostList from "../post-list";
+import '@fortawesome/fontawesome-free/css/all.css';
+import TuitsList from "../tuits";
+import WhatsHappening from "./whats-happening"
 import "./index.css";
 
 
 const HomeComponent = () => {
     return(
         <>
-        <PostList/>
+            <h4>Home</h4>
+            <WhatsHappening/>
+            <TuitsList/>
         </>
     )
 };
